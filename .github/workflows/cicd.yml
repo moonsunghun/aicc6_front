@@ -17,7 +17,7 @@ jobs:
           echo "${{ secrets.VITE_AUTH_CLIENT_ID }}" > .env
       - name: Sign in to Docker Hub
         run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-      - name: Build Docker Image
+      - name: Build Docker Image 
         run: docker build -t shmoon4585/aicc6_task_front:latest .
       - name: Push Docker Image
         run: docker push shmoon4585/aicc6_task_front:latest
