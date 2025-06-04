@@ -134,7 +134,7 @@ const Navbar = () => {
   const handleKakaoLoginClick = () => {
     if (window.Kakao) {
       window.Kakao.Auth.authorize({
-        redirectUri: 'http://localhost:5173/auth/kakao/callback',
+        redirectUri: 'https://frontend.shmoon.site/auth/kakao/callback',
         scope: 'profile_nickname',
       });
 
